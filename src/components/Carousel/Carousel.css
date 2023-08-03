@@ -1,0 +1,54 @@
+/* Basic styling for the carousel container */
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px; /* Adjust the max-width to your desired carousel width */
+  margin: 0 auto;
+}
+
+/* Styling for each slide */
+.slide {
+  flex: 0 0 100%; /* Each slide takes 100% width of the carousel container */
+  transition: transform 0.5s; /* Smooth slide transition */
+}
+
+/* Class for the active slide */
+.slide.active {
+  transform: translateX(0); /* Display active slide in the center */
+}
+
+/* Optional: Add box-shadow or other styling to make slides visually stand out */
+.slide {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Styling for the images inside the slides */
+.slide img {
+  width: 100%;
+  height: auto; /* Adjust the image height as needed */
+}
+
+/* Optional: Add a container for dots to indicate current slide */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Optional: Style the dots to make them visually appealing */
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Class for the active dot */
+.carousel-dot.active {
+  background-color: #333; /* Change the active dot color */
+}
